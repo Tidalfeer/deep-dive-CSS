@@ -1,0 +1,95 @@
+
+:root {
+    --primary-color: #51d106;
+    --secondary-color: #075dc0;
+    --font-color: #b40303;
+    --font-size-large: 2rem;
+    --font-size-medium: 1.5rem;
+    --font-size-small: 1rem;
+    --padding-large: 20px;
+    --padding-medium: 15px;
+    --padding-small: 10px;
+}
+.header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: var(--padding-small);
+    z-index: 1000;
+}
+.footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: var(--padding-small);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: var(--font-size-small);
+}
+body {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.intro {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: var(--padding-large);
+}
+.intro h2 {
+    font-size: var(--font-size-medium);
+}
+.intro p {
+    font-size: var(--font-size-medium);
+}
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    gap: var(--padding-medium);
+}
+.flex-item {
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--padding-medium);
+    text-align: center;
+    border-radius: 10px;
+}
+.flex-item h3 {
+    font-size: var(--font-size-12px);
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--padding-small);
+}
+.grid-item {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: var(--padding-medium);
+    text-align: center;
+    border-radius: 10px;
+}
+.relative-container {
+    position: relative;
+    padding: var(--padding-medium);
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+.absolute-box {
+    position: center;
+    top: 50px;
+    left: auto;
+    padding: var(--padding-small);
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 10px;
+}
